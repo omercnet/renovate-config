@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "local>omercnet/renovate-config"
+    ],
+    "npm": {
+        "schedule": [
+            "after 7am before 9am"
+        ]
+    },
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "renovate"
+            ],
+            "matchManagers": [
+                "npm"
+            ],
+            "stabilityDays": 0
+        },
+        {
+            "automerge": true,
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automergeType": "branch"
+        }
+    ]
+}
