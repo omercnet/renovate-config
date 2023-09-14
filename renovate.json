@@ -16,11 +16,16 @@
             "matchManagers": [
                 "npm"
             ],
-            "stabilityDays": 0
+            "minimumReleaseAge": null
         },
         {
             "automerge": true,
-            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "matchUpdateTypes": [
+                "minor",
+                "patch",
+                "pin",
+                "digest"
+            ],
             "automergeType": "branch"
         }
     ]
